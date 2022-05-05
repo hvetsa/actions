@@ -35,3 +35,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo ${{ secrets.SECRET_NAME }}
+      # custom code
+      - name: Detect python version
+        run: |
+          python3 --version
+          python3 test.py
+          python3 -m pip list
+          ls -lR
+          
+          
