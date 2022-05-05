@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      # custom code
+      - name: Detect python version
+        run: |
+          python3 --version
+          
